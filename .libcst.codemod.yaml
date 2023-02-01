@@ -1,0 +1,9 @@
+blacklist_patterns: []
+formatter:
+- black
+- '-'
+generated_code_marker: '@generated'
+modules:
+- libcst.codemod.commands
+- autodoc.codemod
+repo_root: .

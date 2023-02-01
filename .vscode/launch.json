@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug Codemod",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "envFile": "${workspaceFolder}/.env",
+            "module": "libcst.tool",
+            "args": [
+                "codemod",
+                "autodoc_codemod.AutodocWithCodexCommand",
+                "./etc"
+            ]
+        }
+    ]
+}
